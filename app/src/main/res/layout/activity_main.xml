@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/content_layout"
+            android:layout_marginBottom="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/main_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v4.view.ViewPager>
+
+        </RelativeLayout>
+
+        <fragment
+            android:id="@+id/menu_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:name="com.example.boy.viewpager_demo.Button_menu_Fragment"
+            tools:layout="@layout/bottom_menu"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"></fragment>
+
+    </RelativeLayout>
+
+</FrameLayout>
